@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="main-container-div">
+        <div class="header">
+                                
+            <!-- Insert code for Sign Up, Sign In button here. 
+                 Add code for "ScriBBler" heading and the sub-heading -->
+                  <!-- Code for scribbler  -->
+            <div class="header-content">
+                <a href="..\index.html"><h1 class="content1">ScriBBler</h1></a>
+                 <section class="cotent2">Explore, Imagine, Create</section>
+            </div>
+
+        </div>
+    </div>
+    <div>
+
+        <!-- Insert code for Sign In modal here -->
+         <!-- Insert code for Sign In form here -->
+        <div class="header-content-1">
+             <button id="btn1" class="btn-header" onclick="document.getElementById('id02').style.display='block'">Sign In</button> 
+        </div>
+
+        <!-- Sign In Button's form here  -->
+             <!-- Code for Sign Up and Sign In -->
+            <center>
+            <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="#">
+                
+                        <div class="container">
+                                <h1 style="color:black;">  Welcome Back!</h1>
+                            
+                                <hr>
+                                <label for="email"><b>Username</b></label> <br>
+                                <input type="text" placeholder="User Name" name="email" required> <br>
+
+                                <label for="psw"><b>Password</b></label> <br>
+                                <input type="password" placeholder="Enter Password" name="psw" required> <br>
+
+                                <button type="submit" class="signupbtn">Sign In</button> 
+
+                                <br><br>  <br><br>  <br><br>
+                                <h2 id="btn-para-1" style="color:black;">Not a member? <a  id="btn3" class="btn-header" onclick="document.getElementById('id01').style.display='block'" style="color:blue; cursor:pointer;">Sign Up</a></h2>
+                        </div>
+                </form>
+            </div>
+        </center>
+    </div>
+
+    <div>
+
+         <!-- Insert code for Sign Up modal here -->
+        <!--Sign Up button  -->
+        <div class="header-content-1">
+                <button id="btn1" class="btn-header" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+        </div>
+             <!-- Code for Sign Up and Sign In -->
+            <center>
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="#">
+                
+                        <div class="container">
+                            <h1 style="color:black;">Get started</h1>
+                        
+                            <hr>
+                            <label for="name"><b>Full Name</b></label>
+                            <input type="text" placeholder="Enter Full name" name="email" required> <br>
+
+                            <label for="email"><b>Username</b></label> <br>
+                            <input type="text" placeholder="User Name" name="email" required> <br>
+
+                            <label for="psw"><b>Password</b></label> <br>
+                            <input type="password" placeholder="Enter Password" name="psw" required> <br>
+
+                            <label for="psw-repeat"><b>Confirm Password</b></label> <br>
+                            <input type="password" placeholder="Confirm Password" name="psw-repeat" required> <br>
+                
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        
+                        </div>
+                 </form>
+            </div>
+            </center>
+    </div>
+
+     
+    <div class="allPostsContainer">
+    <div class="post">
+        <div class="post-left">
+            <p class="post-username">Mahi</p>
+        </div>
+        <div class="post-content">
+        <!-- Icon for trash that post -->
+            <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+            <p class="post-title">This Post is about Mahi </p>
+                <p class="post-desc">Speculations were rife that MS Dhoni would announce his retirement after 
+                    India's campaign in the World Cup. However,India Today sources had confirmed that there 
+                    were no official word on Dhoni retiring.Dhoni, it is safe to say, played his last 50-over 
+                    World Cup match on Wednesday. The World Cup-winning wicketkeeper-batsman hit a valiant 50 
+                    in India's unsuccessful chase of 240 against New Zealand in the semi-final in Manchester.
+                    Dhoni took his time to get going but stitched a crucial stand with Ravindra Jadeja. The duo
+                    added 106 runs for the 7th wicket but India fell short of the total by 18 runs after the 
+                    top-order imploded in the first 10 overs.</p>
+              <!-- After clicking on dots on the bottom of posts -->
+            <span class="post-more" onclick="fullPost()">...</span>
+        </div>
+    </div>
+    <div class="post">
+        <div class="post-left">
+            <p class="post-username">Mahi</p>
+        </div>
+        <div class="post-content">
+        <!-- Icon for trash that post -->
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">This Post is about Mahi </p>
+                <p class="post-desc">Speculations were rife that MS Dhoni would announce his retirement after 
+                    India's campaign in the World Cup. However,India Today sources had confirmed that there 
+                    were no official word on Dhoni retiring.Dhoni, it is safe to say, played his last 50-over 
+                    World Cup match on Wednesday. The World Cup-winning wicketkeeper-batsman hit a valiant 50 
+                    in India's unsuccessful chase of 240 against New Zealand in the semi-final in Manchester.
+                    Dhoni took his time to get going but stitched a crucial stand with Ravindra Jadeja. The duo
+                    added 106 runs for the 7th wicket but India fell short of the total by 18 runs after the 
+                    top-order imploded in the first 10 overs.</p>
+              <!-- After clicking on dots on the bottom of posts -->
+            <span class="post-more" onclick="fullPost()">...</span>
+        </div>
+    </div>
+
+
+    <div class="post">
+        <div class="post-left">
+            <p class="post-username">Mahi</p>
+        </div>
+        <div class="post-content">
+        <!-- Icon for trash that post -->
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">Virat statment about Dhoni </p>
+                <p class="post-desc">MS Dhoni hasn't informed him or the team anything about his future. 
+                    India lost the World Cup 2019 semi-final to New Zealand by 18 runs in Old Trafford, 
+                    Manchester on Wednesday.</p>
+              <!-- After clicking on dots on the bottom of posts -->
+            <span class="post-more" onclick="fullPost()">...</span>
+        </div>
+    </div>
+    <div class="post">
+        <div class="post-left">
+            <p class="post-username">Mahi</p>
+        </div>
+        <div class="post-content">
+        <!-- Icon for trash that post -->
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">MS Dhoni's Fans Reactions </p>
+                <p class="post-desc">"A cycle shop owner from Kolkata collapsed in his shop immediately after 
+                    MS Dhoni was declared run out on Wednesday during India vs New Zealand clash".
+                        "Srikanta Maity (33) of Hooghly district, was said to watching the match on his phone 
+                        when the incident took place. He died of cardiac arrest".
+                        "We rushed to his help on hearing a loud thud. We saw him lying unconscious on the floor.
+                         We took him to Khanakul hospital, where he was declared dead on arrival," Sachin Gosh, 
+                         a sweet shop owner in the same area said.</p>
+              <!-- After clicking on dots on the bottom of posts -->
+            <span class="post-more" onclick="fullPost()">...</span>
+        </div>
+    </div>
+    <div class="post">
+            <div class="post-left">
+                <p class="post-username">Mahi</p>
+            </div>
+            <div class="post-content">
+            <!-- Icon for trash that post -->
+                    <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                    <p class="post-title">This Post is about Mahi </p>
+                <p class="post-desc">Speculations were rife that MS Dhoni would announce his retirement after 
+                    India's campaign in the World Cup. However,India Today sources had confirmed that there 
+                    were no official word on Dhoni retiring.Dhoni, it is safe to say, played his last 50-over 
+                    World Cup match on Wednesday. The World Cup-winning wicketkeeper-batsman hit a valiant 50 
+                    in India's unsuccessful chase of 240 against New Zealand in the semi-final in Manchester.
+                    Dhoni took his time to get going but stitched a crucial stand with Ravindra Jadeja. The duo
+                    added 106 runs for the 7th wicket but India fell short of the total by 18 runs after the 
+                    top-order imploded in the first 10 overs.</p>
+             <!-- After clicking on dots on the bottom of posts -->
+                <span class="post-more" onclick="fullPost()">...</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-left">
+                <p class="post-username">Mahi</p>
+            </div>
+            <div class="post-content">
+            <!-- Icon for trash that post -->
+                <button onclick="onDeletePost()" class="deletePost"><i class="fa fa-trash"></i></button>
+                <p class="post-title">This Post is about Mahi </p>
+                <p class="post-desc">Speculations were rife that MS Dhoni would announce his retirement after 
+                    India's campaign in the World Cup. However,India Today sources had confirmed that there 
+                    were no official word on Dhoni retiring.Dhoni, it is safe to say, played his last 50-over 
+                    World Cup match on Wednesday. The World Cup-winning wicketkeeper-batsman hit a valiant 50 
+                    in India's unsuccessful chase of 240 against New Zealand in the semi-final in Manchester.
+                    Dhoni took his time to get going but stitched a crucial stand with Ravindra Jadeja. The duo
+                    added 106 runs for the 7th wicket but India fell short of the total by 18 runs after the 
+                    top-order imploded in the first 10 overs.</p>
+                  <!-- After clicking on dots on the bottom of posts -->
+                <span class="post-more" onclick="fullPost()">...</span>
+            </div>
+        </div>
+        <!-- PopUp after clicking on thrach icon -->
+        <div id="deletePostPrompt" class="deletePrompt">
+                <form class="deleteContent" action="#">
+                    
+                    <div>
+                        <h1 class="deleteContainer">Are you sure you want to delete this post?</h1>                                               
+                        <button type="submit" class="deleteButton">Yes</button>
+                        <button type="button" class="CancelDeleteButton" onclick="onCloseDeleteClicked()">No</button>
+                    </div>
+               </form>
+        </div>
+    </div>
+    <script src="..\js\bloglist.js">  </script>
+    <script src="..\js\header.js"> </script>
+</body>
+
+</html>
